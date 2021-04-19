@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="UsingBootstrap.css">
+    <title>&#9997; Using Bootstrap &#9997; </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme">
+            <div class="navbar-nav">
+                <a href="" class="nav-item nav-link">Home <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg></a>
+                <a href="" class="nav-item nav-link">About <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg></a>
+                <a href="" class="nav-item nav-link">Content <svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                        <path
+                            d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
+                        <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trash" viewBox="0 0 16 16">
+                        <path
+                            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                        <path fill-rule="evenodd"
+                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                    </svg></a>
+                <a href="" class="nav-item nav-link">Contact <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg></a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="display-1 border border-primary rounded shadow text-center">display 1 from bootstrap</h1>
+        <h2 class="display-2 m-5 mt-3">display 2 from bootstrap <span class="badge bg-success">Badge me</span></h2>
+        <button class="btn btn-primary">I am button</button>
+        <a href="#nowhere" class="btn btn-primary">I am a link</a>
+        <a href="#nowhere2" class="btn btn-primary btn-lg">I am a large link</a>
+        <a href="#nowhere3" class="btn btn-primary btn-sm">I am a small link</a>
+        <a href="#nowhere4" class="btn btn-danger">I am a danger link</a>
+        <a href="" class="btn btn-primary">Notifications <span class="badge bg-danger">4</span></a>
+        <p class="p-5 border shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ex consectetur
+            natus
+            non
+            temporibus labore
+            distinctio dignissimos voluptatum similique cum deleniti. Officia dolores quibusdam modi. Hic iusto porro
+            accusantium nulla?
+            Consequuntur magnam voluptas amet eum accusamus laboriosam asperiores corrupti quas repellat veniam
+            veritatis
+            quasi, beatae modi officia minima officiis ut? Iste veniam fugiat, rerum possimus est odit beatae doloribus
+            ab?
+            Quod blanditiis et consequuntur vel totam animi, facere optio, eos omnis non doloremque. Ullam hic
+        </p>
+        <h2 class="display-4 text-primary">Some quote from somebody</h2>
+        <blockquote class="blockquote text-end">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi quo officiis sit dolore culpa,
+                voluptas esse at corporis? Sint vero debitis tenetur at, aperiam porro repudiandae accusantium? Quasi,
+                laboriosam?
+            </p>
+            <footer class="blockquote-footer">Someone Famous <cite class="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <h2>A group of buttons</h2>
+        <div class="btn-group">
+            <button class="btn btn-dark">Button 1</button>
+            <button class="btn btn-danger">Button 2</button>
+            <button class="btn btn-dark">Button 3</button>
+        </div>
+        <h3>Alerts</h3>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">Oh no!</h4>
+            Danger, this message conveys so much danger!!
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+        </div>
+        <h2>Now lets do a FORM</h2>
+        <form action="#nowhere">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="email" class="">Email</label>
+                    <input id="email" type="email" class="form-control" placeholder="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password" class="">password</label>
+                    <input id="password" type="password" class="form-control" placeholder="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="state" class="">state</label>
+                <select class="form-select" name="state" id="state">
+                    <option value="AL">Alabama</option>
+                    <option value="TX">Texas</option>
+                    <option value="AZ">Arizona</option>
+                </select>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    toggle switch check box
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="normalcheck1">
+                <label for="normalcheck1">This one is normal</label>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <label for="givemoney">How much money do you want to give me?</label>
+                    <div class="input-group" id="givemoney">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
